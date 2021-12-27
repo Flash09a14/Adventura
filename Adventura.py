@@ -1,5 +1,9 @@
 import time
-from tqdm import tqdm
+try:
+    from tqdm import tqdm
+except:
+    print("Can't import tqdm")
+
 
 
 class cusload:
