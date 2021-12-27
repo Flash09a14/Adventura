@@ -1,5 +1,5 @@
 import time
-import tqdm-master
+import tqdm
 
 
 
