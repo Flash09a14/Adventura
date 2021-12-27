@@ -1,7 +1,24 @@
+from os import system, name
+try:
+    userinput = input("We will install an outside package that will make the loading animation work, are you sure you want to proceed? (Y/N): ")
+    if userinput == "y" or "Y":
+        if name == "nt":
+            print("Installing packages please wait... \n\n")
+            _ = system("pip install progress progressbar2 alive-progress tqdm")
+            _ = system("cls")
+        else:
+            print("Installing packages please wait... \n\n")
+            _ = system("pip install progress progressbar2 alive-progress tqdm")
+            _ = system("cls")
+        from progress.spinner import MoonSpinner
+    else:
+        print("Either input invalid or typed 'n'/'N'.")
+        raise KeyboardInterrupt
+
+except KeyboardInterrupt:
+    print("Keyboard Interrupt or Invalid input, therefore cancelling installation")
+
 import time
-import tqdm
-
-
 
 class cusload:
     def __init__(self, cusrange, custime):
@@ -11,9 +28,10 @@ class cusload:
         self.custime = int(custime)
 
     def cusanimation(self):
-        for i in tqdm(range(int(self.cusrange))):
-            time.sleep(self.custime)
-            pass
+        with MoonSpinner('Processing…') as bar:
+            for i in range(self.cusrange):
+                time.sleep(self.custime)
+                bar.next()
 
 
 
