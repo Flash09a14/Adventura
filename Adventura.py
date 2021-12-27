@@ -1,8 +1,5 @@
 import time
-try:
-    from tqdm import tqdm
-except:
-    print("Can't import tqdm")
+import tqdm-master
 
 
 
