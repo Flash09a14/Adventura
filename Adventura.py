@@ -1,12 +1,3 @@
-from os import system, name
-
-if name == "nt":
-    _ = system("pip install tqdm")
-    _ = system("cls")
-else:
-    _ = system("pip3 install tqdm")
-    _ = system("clear")
-
 import time
 from tqdm import tqdm
 
