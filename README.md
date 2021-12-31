@@ -1,5 +1,5 @@
 # Adventura
-Adventura is an open source Python Text Adventure Engine, Not yet uploaded to PyPi (Developer build releasing soon 1-3 days 0.6.2)
+Adventura is an open source Python Text Adventure Engine, Not yet uploaded to PyPi (Developer build releasing soon 1-3 days 0.6.2) (due to technical issues to updates and occasions, pypi release delayed sorry for the inconvinience)
 
 Instructions:
 
