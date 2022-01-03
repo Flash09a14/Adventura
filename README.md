@@ -3,16 +3,6 @@ Adventura is an open source Python Text Adventure Engine, Not yet uploaded to Py
 
 Instructions:
 
-# LOADING ANIMATION:
-# to use a loading animation, use a class called cusload, which allows you to create a custom loading animation, powered by tqdm, this is how it works:
-
-# first digit must be the length of the loading animation, the second is the time it takes to load the next update. Example:
-
-loading = cusload(3e5, 0.00001)
-# 
-loading.cusanimation()
-
-===========================================================
 # ADD ITEM:
 # to add an item name, just use class "item"
 # example:
