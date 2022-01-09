@@ -1,10 +1,6 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='tqdm',
-    version='4.62.3',
-    packages=find_packages(),
-    install requires=[
-        'tqdm'
-    ]
+    name='Adventura',
+    version='0.6.5',
 )
