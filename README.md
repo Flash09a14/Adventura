@@ -41,7 +41,7 @@ pick_up_key = ItemAction("Take Key", target_item=key)
 room.add_activity(pick_up_key)
 ```
 
-That was an example of adding an activity, which will auotomatically add an input in the output which will read the first slot in ItemAction(), which in this situation reads "Take Key". If the player chose that input, it will automatically add a key in the inventory
+That was an example of adding an activity, which will automatically add an input in the output which will read the first slot in ItemAction(), which in this situation reads "Take Key". If the player chose that input, it will automatically add a key in the inventory
 
 ============================================================
 # Transition Action:
